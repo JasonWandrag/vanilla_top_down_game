@@ -1,0 +1,75 @@
+/* Doggio */
+[enemy="bunnio"][facing="down"] {
+    animation: bunnioRunDown 0.5s linear infinite;
+  }
+  [enemy="bunnio"][facing="up"] {
+    animation: bunnioRunBack 0.5s linear infinite;
+  }
+  [enemy="bunnio"][facing="right"] {
+    animation: bunnioRunSide 0.5s linear infinite;
+  }
+  [enemy="bunnio"][facing="left"] {
+    animation: bunnioIdleSide 0.5s linear infinite;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: translate(-50%, -50%) scaleX(-1);
+    /* filter: FlipH;
+          -ms-filter: "FlipH"; */
+  }
+  [enemy="bunnio"][facing="left"] {
+    animation: bunnioRunSide 0.5s linear infinite;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: translate(-50%, -50%) scaleX(-1);
+    /* filter: FlipH;
+          -ms-filter: "FlipH"; */
+  }
+  
+  @keyframes bunnioRunDown {
+    0%,
+    100% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/front_1.png");
+    }
+    25% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/front_2.png");
+    }
+    50% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/front_3.png");
+    }
+    75% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/front_4.png");
+    }
+  }
+  @keyframes bunnioRunSide {
+    0%,
+    100% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/side_1.png");
+    }
+    25% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/side_2.png");
+    }
+    50% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/side_3.png");
+    }
+    75% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/side_4.png");
+    }
+  }
+  @keyframes bunnioRunBack {
+    0%,
+    100% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/back_1.png");
+    }
+    25% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/back_2.png");
+    }
+    50% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/back_3.png");
+    }
+    75% {
+      background-image: url("../../assets/sprites/enemies/bunnio/walk/back_4.png");
+    }
+  }
+  

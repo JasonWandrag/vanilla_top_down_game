@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer src="./scripts/index.js" type="module"></script>
+    <!-- <script defer src="./scripts/enemies/index.js" type="module"></script> -->
+</head>
+<body>
+    <dialog open character-selection-screen>
+        <label>
+            Select Character: 
+            <select character-select>
+                <option value="devon">Devon</option>
+                <option value="dave">Dave</option>
+                <option value="ling">Ling</option>
+            </select>
+        </label>
+        <button level-start>Start</button>
+    </dialog>
+    <div data-dashboard>
+        <p data-character-playing="devon">Playing as: </p>
+        <p data-character-health="3">Health: </p>
+        <p data-character-kills="0">Kills: </p>
+        <p data-character-level="1">Level: </p>
+    </div>
+    <div data-player facing="down" character="devon" running=false></div>
+</body>
+</html>

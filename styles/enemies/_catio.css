@@ -1,0 +1,75 @@
+/* Doggio */
+[enemy="catio"][facing="down"] {
+    animation: catioRunDown 0.5s linear infinite;
+  }
+  [enemy="catio"][facing="up"] {
+    animation: catioRunBack 0.5s linear infinite;
+  }
+  [enemy="catio"][facing="right"] {
+    animation: catioRunSide 0.5s linear infinite;
+  }
+  [enemy="catio"][facing="left"] {
+    animation: catioIdleSide 0.5s linear infinite;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: translate(-50%, -50%) scaleX(-1);
+    /* filter: FlipH;
+          -ms-filter: "FlipH"; */
+  }
+  [enemy="catio"][facing="left"] {
+    animation: catioRunSide 0.5s linear infinite;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: translate(-50%, -50%) scaleX(-1);
+    /* filter: FlipH;
+          -ms-filter: "FlipH"; */
+  }
+  
+  @keyframes catioRunDown {
+    0%,
+    100% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/front_1.png");
+    }
+    25% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/front_2.png");
+    }
+    50% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/front_3.png");
+    }
+    75% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/front_4.png");
+    }
+  }
+  @keyframes catioRunSide {
+    0%,
+    100% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/side_1.png");
+    }
+    25% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/side_2.png");
+    }
+    50% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/side_3.png");
+    }
+    75% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/side_4.png");
+    }
+  }
+  @keyframes catioRunBack {
+    0%,
+    100% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/back_1.png");
+    }
+    25% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/back_2.png");
+    }
+    50% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/back_3.png");
+    }
+    75% {
+      background-image: url("../../assets/sprites/enemies/catio/walk/back_4.png");
+    }
+  }
+  

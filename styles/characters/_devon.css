@@ -1,0 +1,110 @@
+/* Devon */
+[character="devon"][running="false"][facing="down"] {
+  animation: devonIdleDown 0.5s linear infinite;
+}
+[character="devon"][running="true"][facing="down"] {
+  animation: devonRunDown 0.5s linear infinite;
+}
+[character="devon"][running="false"][facing="up"] {
+  animation: devonIdleBack 0.5s linear infinite;
+}
+[character="devon"][running="true"][facing="up"] {
+  animation: devonRunBack 0.5s linear infinite;
+}
+[character="devon"][running="false"][facing="right"] {
+  animation: devonIdleSide 0.5s linear infinite;
+}
+[character="devon"][running="true"][facing="right"] {
+  animation: devonRunSide 0.5s linear infinite;
+}
+[character="devon"][running="false"][facing="left"] {
+  animation: devonIdleSide 0.5s linear infinite;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: translate(-50%, -50%) scaleX(-1);
+  /* filter: FlipH;
+      -ms-filter: "FlipH"; */
+}
+[character="devon"][running="true"][facing="left"] {
+  animation: devonRunSide 0.5s linear infinite;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: translate(-50%, -50%) scaleX(-1);
+  /* filter: FlipH;
+      -ms-filter: "FlipH"; */
+}
+
+@keyframes devonIdleDown {
+  0%,
+  100% {
+    background-image: url("../../assets/sprites/players/devon/idle/front_1.png");
+  }
+  50% {
+    background-image: url("../../assets/sprites/players/devon/idle/front_2.png");
+  }
+}
+@keyframes devonRunDown {
+  0%,
+  100% {
+    background-image: url("../../assets/sprites/players/devon/walk/front_1.png");
+  }
+  25% {
+    background-image: url("../../assets/sprites/players/devon/walk/front_2.png");
+  }
+  50% {
+    background-image: url("../../assets/sprites/players/devon/walk/front_3.png");
+  }
+  75% {
+    background-image: url("../../assets/sprites/players/devon/walk/front_4.png");
+  }
+}
+@keyframes devonIdleSide {
+  0%,
+  100% {
+    background-image: url("../../assets/sprites/players/devon/idle/side_1.png");
+  }
+  50% {
+    background-image: url("../../assets/sprites/players/devon/idle/side_2.png");
+  }
+}
+@keyframes devonRunSide {
+  0%,
+  100% {
+    background-image: url("../../assets/sprites/players/devon/walk/side_1.png");
+  }
+  25% {
+    background-image: url("../../assets/sprites/players/devon/walk/side_2.png");
+  }
+  50% {
+    background-image: url("../../assets/sprites/players/devon/walk/side_3.png");
+  }
+  75% {
+    background-image: url("../../assets/sprites/players/devon/walk/side_4.png");
+  }
+}
+@keyframes devonIdleBack {
+  0%,
+  100% {
+    background-image: url("../../assets/sprites/players/devon/idle/back_1.png");
+  }
+  50% {
+    background-image: url("../../assets/sprites/players/devon/idle/back_2.png");
+  }
+}
+@keyframes devonRunBack {
+  0%,
+  100% {
+    background-image: url("../../assets/sprites/players/devon/walk/back_1.png");
+  }
+  25% {
+    background-image: url("../../assets/sprites/players/devon/walk/back_2.png");
+  }
+  50% {
+    background-image: url("../../assets/sprites/players/devon/walk/back_3.png");
+  }
+  75% {
+    background-image: url("../../assets/sprites/players/devon/walk/back_4.png");
+  }
+}

@@ -1,0 +1,74 @@
+/* Doggio */
+[enemy="doggio"][facing="down"] {
+  animation: doggioRunDown 0.5s linear infinite;
+}
+[enemy="doggio"][facing="up"] {
+  animation: doggioRunBack 0.5s linear infinite;
+}
+[enemy="doggio"][facing="right"] {
+  animation: doggioRunSide 0.5s linear infinite;
+}
+[enemy="doggio"][facing="left"] {
+  animation: doggioIdleSide 0.5s linear infinite;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: translate(-50%, -50%) scaleX(-1);
+  /* filter: FlipH;
+        -ms-filter: "FlipH"; */
+}
+[enemy="doggio"][facing="left"] {
+  animation: doggioRunSide 0.5s linear infinite;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: translate(-50%, -50%) scaleX(-1);
+  /* filter: FlipH;
+        -ms-filter: "FlipH"; */
+}
+
+@keyframes doggioRunDown {
+  0%,
+  100% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/front_1.png");
+  }
+  25% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/front_2.png");
+  }
+  50% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/front_3.png");
+  }
+  75% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/front_4.png");
+  }
+}
+@keyframes doggioRunSide {
+  0%,
+  100% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/side_1.png");
+  }
+  25% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/side_2.png");
+  }
+  50% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/side_3.png");
+  }
+  75% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/side_4.png");
+  }
+}
+@keyframes doggioRunBack {
+  0%,
+  100% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/back_1.png");
+  }
+  25% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/back_2.png");
+  }
+  50% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/back_3.png");
+  }
+  75% {
+    background-image: url("../../assets/sprites/enemies/doggio/walk/back_4.png");
+  }
+}

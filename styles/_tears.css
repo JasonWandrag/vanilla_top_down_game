@@ -1,0 +1,55 @@
+/* Character tear CSS */
+[data-tear] {
+    position: absolute;
+    width: 30px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+  }
+  [data-tear] svg {
+    width: 100%;
+  }
+  [data-tear][direction="up"] {
+    animation: moveUp 2s linear;
+  }
+  [data-tear][direction="down"] {
+    animation: moveDown 2s linear;
+  }
+  [data-tear][direction="right"] {
+    animation: moveRight 2s linear;
+  }
+  [data-tear][direction="left"] {
+    animation: moveLeft 2s linear;
+  }
+  @keyframes moveUp {
+    0% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100% {
+      transform: translate(-50%, -2000px) rotate(180deg);
+    }
+  }
+  @keyframes moveDown {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      transform: translate(-50%, 2000px);
+    }
+  }
+  @keyframes moveLeft {
+    0% {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+    100% {
+      transform: translate(-2000px, -50%) rotate(90deg);
+    }
+  }
+  @keyframes moveRight {
+    0% {
+      transform: translate(-50%, -50%) rotate(270deg);
+    }
+    100% {
+      transform: translate(2000px, -50%) rotate(270deg);
+    }
+  }
